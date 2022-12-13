@@ -1,0 +1,12 @@
+{% extends 'index.html' %} 
+{% block content %} 
+<h1>To write note</h1>
+<form method="POST" action="" enctype="multipart/form-data">
+    {% csrf_token %}
+    Title:<input type="text" name="title">
+    To add photo<input type="file" name="photo">
+    <textarea placeholder="Type your words" class="text" name="page"></textarea>
+    
+    <button type="submit">Done</button>
+  </form>
+{% endblock %}

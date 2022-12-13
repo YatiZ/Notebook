@@ -1,0 +1,22 @@
+body{
+  background-color: rgb(250, 215, 243);
+  
+}
+.head{
+  display: inline;
+  justify-content: space-between;
+}
+.navbar{
+    padding-left: 50px;
+    padding-right: 100px;
+    
+}
+.form{
+  display: inline;
+  
+}
+/* for addpage style */
+textarea{
+  width: 500px;
+  height: 800px;
+}

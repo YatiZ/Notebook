@@ -1,0 +1,30 @@
+
+{% extends 'index.html' %}
+{% load static %} 
+{% block content %} 
+<h1>This home page</h1>
+{% for x in post %} 
+{% if x.image %}
+<p>{{x.date}}</p>
+<h2>{{x.title}}</h2>
+<p>{{x.page}}</p>
+<img src="{{x.image.url}}" width="200">
+
+{% else %}
+<p>{{x.date}}</p>
+<h2>{{x.title}}</h2>
+<p>{{x.page}}</p>
+
+
+{% endif %}
+{% endfor %}
+
+<h3>{{img.caption}}</h3>
+{% for img in images %}
+
+<img src="{{img.image.url}}" width="150"><br>
+
+{% endfor %}
+
+
+{% endblock %}
