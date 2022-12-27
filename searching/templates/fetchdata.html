@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+    
+        <th>id</th>
+        <th>first_name</th>
+        <th>lastname</th>
+        <th>email</th>
+        <th>gender</th>
+        <th>ipaddress</th>
+    
+        {% for i in data %}
+        <tbody>
+        <td>{{i.id}}</td>
+        <td>{{i.first_name}}</td>
+        <td>{{i.last_name}}</td>
+        <td>{{i.email}}</td>
+        <td>{{i.gender}}</td>
+        <td>{{i.ip_address}}</td>
+    </tbody>
+        {% endfor %}
+    </table>
+</body>
+</html>
